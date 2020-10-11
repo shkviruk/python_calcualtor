@@ -8,6 +8,13 @@ pipeline {
 				"""
 			} //steps
 		} //stage
+		stage("RUn unit tests") {
+			steps {
+				sh """
+					pytest
+				"""
+			} //steps
+		} //stage
 	} //stages
 } //pipeline
 
